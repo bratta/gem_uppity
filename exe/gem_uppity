@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: false
+
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
+require 'gem_uppity'
+
+gu = GemUppity::Upper.new(ARGV[0])
+gu.upgrade
