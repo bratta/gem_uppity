@@ -4,6 +4,8 @@ jobs:
     working_directory: ~/gem_uppity
     docker:
       - image: circleci/ruby:2.6.3
+      environment:
+        BUNDLER_VERSION: 2.0.1
     steps:
       - checkout
 
